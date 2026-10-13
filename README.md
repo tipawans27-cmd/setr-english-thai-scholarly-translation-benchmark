@@ -1,10 +1,6 @@
-## Scope
+# SETR M2 — English–Thai Scholarly Translation Stress-Test Reproducibility Package
 
-This repository accompanies the article: “A Reproducible English–Thai Benchmark for Stress-Testing Epistemically Consequential Errors in Scholarly Translation.”
-
-The public release contains the frozen benchmark metadata,derived detector outputs, statistical results, analysis code, figures, model/version registries, and provenance manifests.
-
-Verbatim Scopus-indexed abstracts and full derived translations are not redistributed because lawful access to bibliographic content does not necessarily imply redistribution rights.
+This repository contains the **public reproducibility materials** for Manuscript 2 of the Translation-Mediated Epistemic Integrity (TMEI) programme: a controlled stress test of automated safeguards for detecting epistemically consequential corruptions in English–Thai scholarly translation.
 
 ## What is frozen
 - 80 source documents in M2; 400 balanced core instances.
@@ -43,7 +39,7 @@ See [`reproduction_instructions.md`](reproduction_instructions.md). Exact end-to
 On the held-out test set, D1 achieved AUROC 0.671 and AUPRC 0.892; D5 achieved AUROC 0.668 and AUPRC 0.891. Removing D1 reduced D5 AUPRC by 0.084. Methodological-design corruption was most detectable (D5 AUROC 0.894), whereas polarity corruption was near chance (D5 AUROC 0.508). These values must be interpreted against the controlled benchmark design and 0.80 positive prevalence.
 
 ## Citation
-After reserving a Zenodo DOI, replace placeholders in `CITATION.cff` and `docs/ZENODO_DEPOSIT_CHECKLIST.md`. Cite the versioned Zenodo DOI for this release; use the concept DOI when referring to the evolving repository across versions.
+Cite the frozen Version 1.0.0 release using the version-specific Zenodo DOI: https://doi.org/10.5281/zenodo.23346588. Companion code release: https://github.com/tipawans27-cmd/setr-english-thai-scholarly-translation-benchmark/releases/tag/v1.0.0. Use a future Zenodo concept DOI only when referring to the evolving repository across multiple versions.
 
 ## License
 - Code: MIT (`LICENSE-CODE`).
@@ -60,3 +56,10 @@ The archival repository of record for the manuscript is **Zenodo**. The companio
 ### Public versus restricted materials
 
 The public release contains author-created code, non-text benchmark metadata, detector features/scores that do not reproduce third-party source text, frozen statistical outputs, figures, registries, and provenance manifests. Verbatim Scopus-indexed abstracts, full English source text, Thai translations, and candidate backtranslations are not included in the public release unless redistribution rights are confirmed. See `restricted_inputs/README.md` and `docs/Data_Repository_Plan_Zenodo.md`.
+
+
+## Persistent identifiers
+
+- Zenodo Version 1.0.0 DOI: [10.5281/zenodo.23346588](https://doi.org/10.5281/zenodo.23346588)
+- GitHub release v1.0.0: https://github.com/tipawans27-cmd/setr-english-thai-scholarly-translation-benchmark/releases/tag/v1.0.0
+- GitHub repository: https://github.com/tipawans27-cmd/setr-english-thai-scholarly-translation-benchmark

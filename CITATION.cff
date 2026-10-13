@@ -1,13 +1,13 @@
 cff-version: 1.2.0
 message: "If you use this repository, please cite the archived Zenodo release and the associated article."
-title: "SETR M2: Reproducibility materials for stress-testing epistemically consequential English–Thai scholarly translation corruptions"
+title: "English–Thai Scholarly Translation Stress-Test Benchmark and Reproducibility Materials for Epistemically Consequential Errors"
 type: dataset
 version: 1.0.0
-date-released: 2026-10-13
+date-released: 2026-10-14
 authors:
-  - family-names: "[FAMILY NAME]"
-    given-names: "[GIVEN NAME]"
-    orcid: "https://orcid.org/[ORCID]"
+  - family-names: "Silwattananusarn"
+    given-names: "Tipawan"
+    orcid: "https://orcid.org/0000-0002-9964-1670"
 keywords:
   - machine translation
   - English-Thai
@@ -16,5 +16,6 @@ keywords:
   - controlled perturbation
   - reproducibility
 license: CC-BY-4.0
-repository-code: "https://github.com/[OWNER]/setr-m2"
-doi: "10.5281/zenodo.[RESERVED_DOI_SUFFIX]"
+repository-code: "https://github.com/tipawans27-cmd/setr-english-thai-scholarly-translation-benchmark"
+url: "https://github.com/tipawans27-cmd/setr-english-thai-scholarly-translation-benchmark/releases/tag/v1.0.0"
+doi: "10.5281/zenodo.23346588"
