@@ -1,0 +1,3 @@
+file,required_columns,expected_rows,public_release
+M2_SETR_Core_Balanced_400_v1.1.csv,"instance_id;document_id;panel;label;family;severity;source_en;candidate_th",400,no
+M2_OpenThai_SETR_400_v1.2.csv,"instance_id;status;risk_probability",400,no/public only if rights and policy permit

@@ -1,0 +1,16 @@
+﻿.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+*.key
+*.pem
+*.pfx
+*.token
+private/
+restricted_data/
+restricted_local/
+02_RESTRICTED_LOCAL/
+03_SOURCE_ARCHIVE/
+*.log
+Thumbs.db

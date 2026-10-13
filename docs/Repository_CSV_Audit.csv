@@ -1,0 +1,13 @@
+file,status,risky_columns,all_columns
+benchmark_manifest_public.csv,OK,,document_id;persistent_identifier;panel;split;family;severity;label;source_text_sha256;candidate_text_sha256;notes
+data_dictionary.csv,OK,,file;variable;type;description;access
+restricted_inputs\input_schema.csv,OK,,file;required_columns;expected_rows;public_release
+results\tables\M2_RQ_to_Results_Map.csv,OK,,RQ;question;outputs;primary_evidence
+results\tables\Table1_Benchmark_Characteristics.csv,OK,,split;family;instances;documents;positive;negative
+results\tables\Table2_Primary_Detector_Performance.csv,OK,,detector;development_threshold;test_n;test_docs;AUROC;AUPRC;sensitivity;specificity;F1;MCC;Brier;threshold;AUROC_CI95_low;AUROC_CI95_high;AUPRC_CI95_low;AUPRC_CI95_high;sensitivity_CI95_low;sensitivity_CI95_high;specificity_CI95_low;specificity_CI95_high;F1_CI95_low;F1_CI95_high;MCC_CI95_low;MCC_CI95_high;Brier_CI95_low;Brier_CI95_high
+results\tables\Table3_By_Error_Family.csv,OK,,family;detector;n;documents;AUROC;AUPRC;sensitivity;specificity;F1;MCC;Brier;threshold
+results\tables\Table4_By_Severity.csv,OK,,severity;n;documents;mean_D5_risk;median_D5_risk;detection_rate_D5;spearman_severity_rho_all;spearman_p_all;Kruskal_H_all;Kruskal_p_all
+results\tables\Table5_By_Discipline.csv,OK,,panel;n;documents;AUROC;AUPRC;sensitivity;specificity;F1;MCC;Brier;threshold
+results\tables\Table6_Ablation.csv,OK,,configuration;removed;AUROC;AUPRC;delta_AUROC_vs_full;delta_AUPRC_vs_full;threshold
+results\tables\Table7a_Calibration.csv,OK,,bin;n;mean_predicted_risk;observed_event_rate
+results\tables\Table7b_Risk_Coverage.csv,OK,,coverage;retained_n;selective_error_rate;selective_accuracy;mean_confidence

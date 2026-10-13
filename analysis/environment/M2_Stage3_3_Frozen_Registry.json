@@ -1,0 +1,47 @@
+{
+  "package": "TMEI M2 Stage 3.3 Final Statistical Package v1.0",
+  "benchmark": {
+    "n_instances": 400,
+    "n_documents": 80,
+    "instances_per_document": 5
+  },
+  "split": {
+    "seed": 2026101203,
+    "method": "SHA256 ordering by document_id",
+    "development_docs": 40,
+    "test_docs": 40
+  },
+  "bootstrap": {
+    "seed": 2026101206,
+    "B": 10000,
+    "unit": "document"
+  },
+  "embedding": {
+    "repo": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42"
+  },
+  "backtranslation": {
+    "repo": "Helsinki-NLP/opus-mt-th-en",
+    "revision": "0fff80b",
+    "direction": "tha->eng",
+    "num_beams": 1,
+    "do_sample": false,
+    "max_new_tokens": 512
+  },
+  "detectors": {
+    "D1": "deterministic safeguards -> leakage-controlled logistic classifier",
+    "D2": "cross-lingual semantic risk = 1-cos(source_en,candidate_th)",
+    "D3": "backtranslation features -> leakage-controlled logistic classifier",
+    "D4": "OpenThai-SystemOne risk probability",
+    "D5": "stacked logistic ensemble D1-D4"
+  },
+  "primary_metrics": [
+    "AUROC",
+    "AUPRC",
+    "sensitivity",
+    "specificity",
+    "F1",
+    "MCC"
+  ],
+  "claim_boundary": "Controlled perturbation stress test; not an estimate of naturally occurring translation-error prevalence and not human safety certification."
+}

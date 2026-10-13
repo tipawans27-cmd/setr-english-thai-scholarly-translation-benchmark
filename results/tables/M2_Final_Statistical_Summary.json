@@ -1,0 +1,21 @@
+{
+  "n_total": 400,
+  "n_documents": 80,
+  "development_docs": 40,
+  "test_docs": 40,
+  "thresholds": {
+    "D1": 0.4597808899230103,
+    "D2": 0.20028365,
+    "D3": 0.4779137477545336,
+    "D4": 0.4540743231773376,
+    "D5": 0.4437947011427358
+  },
+  "D5_test_AUROC": 0.6678124999999999,
+  "D5_test_AUPRC": 0.8912708963546523,
+  "D5_test_Brier": 0.2313148415391258,
+  "risk_coverage_AURC": 0.13503373015873016,
+  "bootstrap_B": 10000,
+  "bootstrap_seed": 2026101206,
+  "finalization_patch": "05c_resume_figures4_to_summary_PATCHED_v1.0.3.py",
+  "claim_boundary": "Controlled perturbation benchmark; not natural-error prevalence or human safety certification."
+}

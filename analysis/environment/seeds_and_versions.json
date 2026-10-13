@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "frozen_seeds": {
+    "corpus_sampling": 2026101201,
+    "M2_subset": 2026101202,
+    "M2_dev_test_split": 2026101203,
+    "M1_robustness": 2026101204,
+    "M3_secondary": 2026101205,
+    "document_cluster_bootstrap": 2026101206,
+    "classifier_model_split": 2026101207
+  },
+  "split_method": "SHA256 ordering by document_id; first 40 M2 documents development, remaining 40 held-out test",
+  "bootstrap": {
+    "B": 10000,
+    "unit": "document"
+  }
+}

@@ -1,0 +1,11 @@
+﻿split,family,instances,documents,positive,negative
+development,CLEAN,40,40,0,40
+development,E1_POLARITY,40,40,40,0
+development,E2_EPISTEMIC_FORCE,40,40,40,0
+development,E3_METHOD_DESIGN,40,40,40,0
+development,E4_EVIDENCE_OMISSION,40,40,40,0
+test,CLEAN,40,40,0,40
+test,E1_POLARITY,40,40,40,0
+test,E2_EPISTEMIC_FORCE,40,40,40,0
+test,E3_METHOD_DESIGN,40,40,40,0
+test,E4_EVIDENCE_OMISSION,40,40,40,0

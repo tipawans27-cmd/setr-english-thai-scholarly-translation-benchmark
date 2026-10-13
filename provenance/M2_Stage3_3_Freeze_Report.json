@@ -1,0 +1,17 @@
+{
+  "missing": [],
+  "benchmark_rows": 400,
+  "benchmark_docs": 80,
+  "openthai_rows": 400,
+  "openthai_complete": 400,
+  "D1_rows": 400,
+  "D2_rows": 400,
+  "BT_rows": 400,
+  "BT_complete": 400,
+  "D3_rows": 400,
+  "analysis_rows": 400,
+  "all_ids_align": true,
+  "development_docs": 40,
+  "test_docs": 40,
+  "freeze_pass": true
+}

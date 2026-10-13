@@ -1,0 +1,6 @@
+﻿RQ,question,outputs,primary_evidence
+RQ1,Detection accuracy of automated safeguards,Table2,D1-D5 AUROC/AUPRC/Sensitivity/Specificity/F1/MCC with document-bootstrap CIs
+RQ2,Which signal families contribute most,"Table2, Table6",individual detectors + ablation deltas
+RQ3,Ensemble risk-score discrimination,"Table2, Table7a, Table7b","D5 discrimination, Brier calibration, risk-coverage"
+RQ4,Hardest controlled error families,Table3,family-specific D1-D5 performance
+RQ5,Variation by severity and discipline,"Table4, Table5",D5 severity trend and discipline-specific performance

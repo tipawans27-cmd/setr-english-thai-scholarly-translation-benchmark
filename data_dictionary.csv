@@ -1,0 +1,98 @@
+﻿file,variable,type,description,access
+M2_RQ_to_Results_Map.csv,RQ,string,Research question identifier,public
+M2_RQ_to_Results_Map.csv,question,string,Research question text,public
+M2_RQ_to_Results_Map.csv,outputs,string,Frozen outputs supporting the RQ,public
+M2_RQ_to_Results_Map.csv,primary_evidence,string,Primary evidence type for RQ,public
+Table1_Benchmark_Characteristics.csv,split,string,Frozen partition: development or test,public
+Table1_Benchmark_Characteristics.csv,family,string,Controlled corruption family or CLEAN,public
+Table1_Benchmark_Characteristics.csv,instances,integer,Number of benchmark instances,public
+Table1_Benchmark_Characteristics.csv,documents,integer,Number of unique source documents,public
+Table1_Benchmark_Characteristics.csv,positive,integer,Number of controlled-corruption instances,public
+Table1_Benchmark_Characteristics.csv,negative,integer,Number of clean instances,public
+Table2_Primary_Detector_Performance.csv,detector,string,Detector identifier D1–D5,public
+Table2_Primary_Detector_Performance.csv,development_threshold,number,Decision threshold selected on development documents only,public
+Table2_Primary_Detector_Performance.csv,test_n,integer,Number of held-out test instances,public
+Table2_Primary_Detector_Performance.csv,test_docs,integer,Number of held-out test documents,public
+Table2_Primary_Detector_Performance.csv,AUROC,number,Area under ROC curve,public
+Table2_Primary_Detector_Performance.csv,AUPRC,number,Area under precision–recall curve,public
+Table2_Primary_Detector_Performance.csv,sensitivity,number,True-positive rate at frozen threshold,public
+Table2_Primary_Detector_Performance.csv,specificity,number,True-negative rate at frozen threshold,public
+Table2_Primary_Detector_Performance.csv,F1,number,F1 score at frozen threshold,public
+Table2_Primary_Detector_Performance.csv,MCC,number,Matthews correlation coefficient,public
+Table2_Primary_Detector_Performance.csv,Brier,number,Brier score,public
+Table2_Primary_Detector_Performance.csv,threshold,number,Frozen decision threshold,public
+Table2_Primary_Detector_Performance.csv,AUROC_CI95_low,number,Lower bound of 95% document-cluster bootstrap confidence interval,public
+Table2_Primary_Detector_Performance.csv,AUROC_CI95_high,number,Upper bound of 95% document-cluster bootstrap confidence interval,public
+Table2_Primary_Detector_Performance.csv,AUPRC_CI95_low,number,Lower bound of 95% document-cluster bootstrap confidence interval,public
+Table2_Primary_Detector_Performance.csv,AUPRC_CI95_high,number,Upper bound of 95% document-cluster bootstrap confidence interval,public
+Table2_Primary_Detector_Performance.csv,sensitivity_CI95_low,number,Lower bound of 95% document-cluster bootstrap confidence interval,public
+Table2_Primary_Detector_Performance.csv,sensitivity_CI95_high,number,Upper bound of 95% document-cluster bootstrap confidence interval,public
+Table2_Primary_Detector_Performance.csv,specificity_CI95_low,number,Lower bound of 95% document-cluster bootstrap confidence interval,public
+Table2_Primary_Detector_Performance.csv,specificity_CI95_high,number,Upper bound of 95% document-cluster bootstrap confidence interval,public
+Table2_Primary_Detector_Performance.csv,F1_CI95_low,number,Lower bound of 95% document-cluster bootstrap confidence interval,public
+Table2_Primary_Detector_Performance.csv,F1_CI95_high,number,Upper bound of 95% document-cluster bootstrap confidence interval,public
+Table2_Primary_Detector_Performance.csv,MCC_CI95_low,number,Lower bound of 95% document-cluster bootstrap confidence interval,public
+Table2_Primary_Detector_Performance.csv,MCC_CI95_high,number,Upper bound of 95% document-cluster bootstrap confidence interval,public
+Table2_Primary_Detector_Performance.csv,Brier_CI95_low,number,Lower bound of 95% document-cluster bootstrap confidence interval,public
+Table2_Primary_Detector_Performance.csv,Brier_CI95_high,number,Upper bound of 95% document-cluster bootstrap confidence interval,public
+Table3_By_Error_Family.csv,family,string,Controlled corruption family or CLEAN,public
+Table3_By_Error_Family.csv,detector,string,Detector identifier D1–D5,public
+Table3_By_Error_Family.csv,n,integer,Number of instances in subgroup,public
+Table3_By_Error_Family.csv,documents,integer,Number of unique source documents,public
+Table3_By_Error_Family.csv,AUROC,number,Area under ROC curve,public
+Table3_By_Error_Family.csv,AUPRC,number,Area under precision–recall curve,public
+Table3_By_Error_Family.csv,sensitivity,number,True-positive rate at frozen threshold,public
+Table3_By_Error_Family.csv,specificity,number,True-negative rate at frozen threshold,public
+Table3_By_Error_Family.csv,F1,number,F1 score at frozen threshold,public
+Table3_By_Error_Family.csv,MCC,number,Matthews correlation coefficient,public
+Table3_By_Error_Family.csv,Brier,number,Brier score,public
+Table3_By_Error_Family.csv,threshold,number,Frozen decision threshold,public
+Table4_By_Severity.csv,severity,string,Controlled perturbation severity label,public
+Table4_By_Severity.csv,n,integer,Number of instances in subgroup,public
+Table4_By_Severity.csv,documents,integer,Number of unique source documents,public
+Table4_By_Severity.csv,mean_D5_risk,number,Mean D5 ensemble risk score,public
+Table4_By_Severity.csv,median_D5_risk,number,Median D5 ensemble risk score,public
+Table4_By_Severity.csv,detection_rate_D5,number,Fraction detected by D5 at frozen threshold,public
+Table4_By_Severity.csv,spearman_severity_rho_all,number,Global test statistic or p-value repeated for reporting convenience,public
+Table4_By_Severity.csv,spearman_p_all,number,Global test statistic or p-value repeated for reporting convenience,public
+Table4_By_Severity.csv,Kruskal_H_all,number,Global test statistic or p-value repeated for reporting convenience,public
+Table4_By_Severity.csv,Kruskal_p_all,number,Global test statistic or p-value repeated for reporting convenience,public
+Table5_By_Discipline.csv,panel,string,"Disciplinary panel (AH, SS, HL, STEM)",public
+Table5_By_Discipline.csv,n,integer,Number of instances in subgroup,public
+Table5_By_Discipline.csv,documents,integer,Number of unique source documents,public
+Table5_By_Discipline.csv,AUROC,number,Area under ROC curve,public
+Table5_By_Discipline.csv,AUPRC,number,Area under precision–recall curve,public
+Table5_By_Discipline.csv,sensitivity,number,True-positive rate at frozen threshold,public
+Table5_By_Discipline.csv,specificity,number,True-negative rate at frozen threshold,public
+Table5_By_Discipline.csv,F1,number,F1 score at frozen threshold,public
+Table5_By_Discipline.csv,MCC,number,Matthews correlation coefficient,public
+Table5_By_Discipline.csv,Brier,number,Brier score,public
+Table5_By_Discipline.csv,threshold,number,Frozen decision threshold,public
+Table6_Ablation.csv,configuration,string,Ensemble configuration,public
+Table6_Ablation.csv,removed,string,Detector removed in ablation,public
+Table6_Ablation.csv,AUROC,number,Area under ROC curve,public
+Table6_Ablation.csv,AUPRC,number,Area under precision–recall curve,public
+Table6_Ablation.csv,delta_AUROC_vs_full,number,AUROC difference relative to full D1–D4 ensemble,public
+Table6_Ablation.csv,delta_AUPRC_vs_full,number,AUPRC difference relative to full D1–D4 ensemble,public
+Table6_Ablation.csv,threshold,number,Frozen decision threshold,public
+Table7a_Calibration.csv,bin,string,Equal-frequency D5 calibration bin,public
+Table7a_Calibration.csv,n,integer,Number of instances in subgroup,public
+Table7a_Calibration.csv,mean_predicted_risk,number,Mean predicted D5 risk in bin,public
+Table7a_Calibration.csv,observed_event_rate,number,Observed controlled-corruption rate in bin,public
+Table7b_Risk_Coverage.csv,coverage,number,Fraction of test instances retained by confidence,public
+Table7b_Risk_Coverage.csv,retained_n,integer,Number of retained test instances,public
+Table7b_Risk_Coverage.csv,selective_error_rate,number,Error rate among retained instances,public
+Table7b_Risk_Coverage.csv,selective_accuracy,number,Accuracy among retained instances,public
+Table7b_Risk_Coverage.csv,mean_confidence,number,Mean distance from frozen D5 threshold among retained instances,public
+M2_SETR_Core_Balanced_400_v1.1.csv,instance_id,string,Unique benchmark-instance identifier,restricted/not redistributed
+M2_SETR_Core_Balanced_400_v1.1.csv,document_id,string,Pseudonymous source-document identifier,restricted/not redistributed
+M2_SETR_Core_Balanced_400_v1.1.csv,panel,string,Disciplinary panel,restricted/not redistributed
+M2_SETR_Core_Balanced_400_v1.1.csv,label,integer,"0=CLEAN, 1=controlled corruption",restricted/not redistributed
+M2_SETR_Core_Balanced_400_v1.1.csv,family,string,CLEAN or E1–E4 corruption family,restricted/not redistributed
+M2_SETR_Core_Balanced_400_v1.1.csv,severity,string,Controlled severity; not applicable to CLEAN,restricted/not redistributed
+M2_SETR_Core_Balanced_400_v1.1.csv,source_en,string,Verbatim English source text; excluded from public release due to source-database/copyright restrictions,restricted/not redistributed
+M2_SETR_Core_Balanced_400_v1.1.csv,candidate_th,string,Thai candidate text derived from source; excluded from public release,restricted/not redistributed
+M2_SETR_Core_Balanced_400_v1.1.csv,clean_th,string,Clean Thai reference candidate used for benchmark provenance; hidden from detector features and excluded from public release,restricted/not redistributed
+M2_OpenThai_SETR_400_v1.2.csv,instance_id,string,Benchmark-instance identifier,restricted input / derived signal
+M2_OpenThai_SETR_400_v1.2.csv,status,string,OpenThai inference completion status,restricted input / derived signal
+M2_OpenThai_SETR_400_v1.2.csv,risk_probability,number,OpenThai-SystemOne risk probability used as D4,restricted input / derived signal

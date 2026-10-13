@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "study": "M2 SETR",
+  "models": [
+    {
+      "role": "primary_translation",
+      "repository": "facebook/nllb-200-distilled-600M",
+      "revision": "f8d333a098d19b4fd9a8b18f94170487ad3f821d",
+      "direction": "English→Thai",
+      "public_redistribution": "model reference only"
+    },
+    {
+      "role": "backtranslation_D3",
+      "repository": "Helsinki-NLP/opus-mt-th-en",
+      "revision": "0fff80b",
+      "direction": "Thai→English",
+      "generation": {
+        "num_beams": 1,
+        "do_sample": false,
+        "max_new_tokens": 512
+      }
+    },
+    {
+      "role": "cross_lingual_embedding_D2",
+      "repository": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+      "score": "1 - cosine(source_en, candidate_th)"
+    },
+    {
+      "role": "thai_native_detector_D4",
+      "repository": "iapp/OpenThai-SystemOne",
+      "version": "0.3",
+      "use": "risk probability only; not ground truth"
+    }
+  ],
+  "claim_boundary": "No model output is treated as human-equivalent ground truth or safety certification."
+}
